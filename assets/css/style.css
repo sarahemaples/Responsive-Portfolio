@@ -110,10 +110,16 @@ img {
 .port{
     color: #ffffff;
 }
-#pic1{
+#pic1, #pic2, #pic3, #pic4, #pic5{
     background: url("https://picsum.photos/200/200");
     height: 200px;
     width: 200px;
+    float: left;
+    margin: 10px;
+}
+
+#skills{
+ height: 460px;
 }
 
 #cap1{
@@ -122,6 +128,15 @@ img {
     padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
+}
+
+/*----------------CONTACT PAGE!-----------------*/
+#contactForm{
+    background: #ffffff;
+    width: 960px;
+    margin: auto;
+    padding: 10px;
+    border: solid #dddddd 1px;
 }
 
 .clearfix::after {
