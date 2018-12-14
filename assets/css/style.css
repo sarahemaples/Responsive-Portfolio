@@ -4,7 +4,9 @@ body{
     margin: 0px;
     color: #777777;
 }
-/* header and footer (same for each page) */
+/*___________________________________________________________________________________*/
+/* header and nav bar (same for each page) */
+/*___________________________________________________________________________________*/
 header{
     background: #ffffff;
     height: 100px;
@@ -45,7 +47,27 @@ li{
     color: #cccccc;
     font-size: 16px;
 }
-/* main box containing all info */
+/*___________________________________________________________________________________*/
+/* footer (same for each page)*/
+/*___________________________________________________________________________________*/
+
+footer {
+    background: #666666;
+    width: 100%;
+    text-align: center;
+    border-top: solid;
+    padding: 20px;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    border-top: solid 3px #4aaaa5;
+}
+/*___________________________________________________________________________________*/
+/* -------------- ABOUT ME PAGE!!!! -------------- */
+/*___________________________________________________________________________________*/
+
+/* main box containing all info 
+        this same box is used for the portfolio page as well */
 #main{
     width: 960px;
     margin: auto;
@@ -72,22 +94,6 @@ than adding a small div? ----------------*/
     opacity: 0.5;
     margin: 20px;
 }
-/* info below this varies per page */
-
-/* footer */
-footer {
-    background: #666666;
-    width: 100%;
-    text-align: center;
-    border-top: solid;
-    padding: 20px;
-    color: #ffffff;
-    position: fixed;
-    bottom: 0;
-    border-top: solid 3px #4aaaa5;
-}
-/* -------------- ABOUT ME PAGE!!!! -------------- 
-
 /* below is code for the text and img in the about me
 box */
 #full{
@@ -105,7 +111,9 @@ img {
 #par {
     padding: 10px;
 }
+/*___________________________________________________________________________________*/
 /*-------------- PORTFOLIO PAGE -----------------*/
+/*___________________________________________________________________________________*/
 
 .port{
     color: #ffffff;
@@ -129,8 +137,10 @@ img {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
 }
-
+/*___________________________________________________________________________________*/
 /*----------------CONTACT PAGE!-----------------*/
+/*___________________________________________________________________________________*/
+
 #contactForm{
     background: #ffffff;
     width: 960px;
@@ -138,6 +148,33 @@ img {
     padding: 10px;
     border: solid #dddddd 1px;
 }
+
+/*___________________________________________________________________________________*/
+/*-------------------LETS GET RESPONSIVE------------------*/
+/*___________________________________________________________________________________*/
+
+/* normal desktop size. set max to 960 to make sure nothing gets cut off*/
+@media only screen and (max-width: 980px){
+#main{
+    margin-top: 50px; 
+    margin-left: 50px;
+    width: 66%;
+}
+#skills{
+    height: 1100px;
+}
+}
+/* medium sized screens like ipads */
+@media only screen and (max-width: 768px){
+    
+}
+/* smaller screens like phones */
+@media only screen and (max-width: 640px){
+    
+}
+
+/*___________________________________________________________________________________*/
+/* idk i was told to put the clearfix after everything so here we are */
 
 .clearfix::after {
     overflow: auto;
