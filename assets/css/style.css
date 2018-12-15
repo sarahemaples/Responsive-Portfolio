@@ -25,8 +25,9 @@ header{
 #name{
     background: #4aaaa5;
     font-size: 2em;
-    padding: 10px;
+    padding: 32px;
     float: left;
+    text-align: center;
 }
 /* nav bar */
 #links{
@@ -134,6 +135,7 @@ img {
     background: #4aaaa5;
     text-align: center;
     padding: 10px;
+    margin-top: 143px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
 }
@@ -161,16 +163,38 @@ img {
     width: 66%;
 }
 #skills{
-    height: 1100px;
+    height: 700px;
 }
 }
 /* medium sized screens like ipads */
 @media only screen and (max-width: 768px){
-    
+#main{
+    width: 90%;
+    margin: auto;
+}
 }
 /* smaller screens like phones */
 @media only screen and (max-width: 640px){
-    
+#header{
+    width: 100%;
+}
+#name{
+    padding: 10px;
+    margin-top: 0px;
+    float: none;
+}
+#links{
+    float: none;
+    align-self: center;
+}
+ul{
+    width: fit-content;
+    margin: 10px auto;
+    padding: 0;
+}
+#skills{
+    height: 1100px;
+}
 }
 
 /*___________________________________________________________________________________*/
